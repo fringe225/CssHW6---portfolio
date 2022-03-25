@@ -169,6 +169,9 @@ header .right ul li{
 
 /* Second Section */
 
+#Second{
+    padding:3rem 0;
+}
 #Second img{
     width: 100%;
     border-radius:15px;
@@ -180,6 +183,7 @@ header .right ul li{
 #Second .box{
     width: 22%;
     border-radius:15px;
+    position:relative;
 }
 
 #Second .box .img-box{
@@ -189,5 +193,63 @@ header .right ul li{
 
 #Second .box:hover img{
     transform: scale(1.2);
+    filter: brightness(0.6);
 
 }
+
+#Second .box-text{
+    position:absolute;
+    width: 80%;
+    bottom:0;
+    left:50%;
+    transform:translateX(-50%);
+    transition:0.5s;
+}
+
+#Second .box-text h5{
+    font-size:24px;
+    margin:24px 0 12px;
+    text-align: center;
+    color:#fff;
+    transition: 0.5;
+
+}
+
+#Second .box-shop span{
+    position:absolute;
+    color:#e2bb53;
+    text-decoration:underline;
+    text-decoration-color:#e2bb53;
+    bottom:30px;
+    left:50%;
+    transform:translateX(-50%);
+    letter-spacing: 1px;
+}
+
+#Second .box-text p{
+    opacity:0;
+    text-align:center;
+    margin-bottom: 20px;
+    color:#fff;
+
+    
+}
+
+#Second .box:hover{
+    cursor: pointer;
+}
+#Second .box-text h5:hover{
+    color:#e2bb53;
+    cursor:pointer; 
+}
+
+
+
+#Second .box:hover .box-text{
+    bottom:40px;
+}
+
+#Second .box:hover .box-text p{
+    opacity: 1;
+}
+
